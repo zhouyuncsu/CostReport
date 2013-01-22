@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A137C64316AC2D2800254043 /* main_tableview_00.png in Resources */ = {isa = PBXBuildFile; fileRef = A137C63E16AC2D2800254043 /* main_tableview_00.png */; };
+		A137C64416AC2D2800254043 /* main_tableview_01.png in Resources */ = {isa = PBXBuildFile; fileRef = A137C63F16AC2D2800254043 /* main_tableview_01.png */; };
+		A137C64516AC2D2800254043 /* main_tableview_10.png in Resources */ = {isa = PBXBuildFile; fileRef = A137C64016AC2D2800254043 /* main_tableview_10.png */; };
+		A137C64616AC2D2800254043 /* main_tableview_11.png in Resources */ = {isa = PBXBuildFile; fileRef = A137C64116AC2D2800254043 /* main_tableview_11.png */; };
+		A137C64716AC2D2800254043 /* main_tableview_20.png in Resources */ = {isa = PBXBuildFile; fileRef = A137C64216AC2D2800254043 /* main_tableview_20.png */; };
+		A138C2A816ABB5C4009991EF /* CostTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A138C2A616ABB5C4009991EF /* CostTypeViewController.m */; };
+		A138C2A916ABB5C4009991EF /* CostTypeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A138C2A716ABB5C4009991EF /* CostTypeViewController.xib */; };
+		A1720C4916AD823600404DD8 /* cloth.png in Resources */ = {isa = PBXBuildFile; fileRef = A1720C4016AD823600404DD8 /* cloth.png */; };
+		A1720C4A16AD823600404DD8 /* drink.png in Resources */ = {isa = PBXBuildFile; fileRef = A1720C4116AD823600404DD8 /* drink.png */; };
+		A1720C4B16AD823600404DD8 /* elec.png in Resources */ = {isa = PBXBuildFile; fileRef = A1720C4216AD823600404DD8 /* elec.png */; };
+		A1720C4C16AD823600404DD8 /* else.png in Resources */ = {isa = PBXBuildFile; fileRef = A1720C4316AD823600404DD8 /* else.png */; };
+		A1720C4E16AD823600404DD8 /* gas.png in Resources */ = {isa = PBXBuildFile; fileRef = A1720C4516AD823600404DD8 /* gas.png */; };
+		A1720C4F16AD823600404DD8 /* shoes.png in Resources */ = {isa = PBXBuildFile; fileRef = A1720C4616AD823600404DD8 /* shoes.png */; };
+		A1720C5016AD823600404DD8 /* snack.png in Resources */ = {isa = PBXBuildFile; fileRef = A1720C4716AD823600404DD8 /* snack.png */; };
+		A1720C5116AD823600404DD8 /* sweets.png in Resources */ = {isa = PBXBuildFile; fileRef = A1720C4816AD823600404DD8 /* sweets.png */; };
+		A1720C5316AD872C00404DD8 /* food.png in Resources */ = {isa = PBXBuildFile; fileRef = A1720C5216AD872C00404DD8 /* food.png */; };
 		A1C092CA16A967CF001A992A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C092C916A967CF001A992A /* UIKit.framework */; };
 		A1C092CC16A967CF001A992A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C092CB16A967CF001A992A /* Foundation.framework */; };
 		A1C092CE16A967CF001A992A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C092CD16A967CF001A992A /* CoreGraphics.framework */; };
@@ -16,12 +32,37 @@
 		A1C092DC16A967CF001A992A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A1C092DB16A967CF001A992A /* Default.png */; };
 		A1C092DE16A967CF001A992A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1C092DD16A967CF001A992A /* Default@2x.png */; };
 		A1C092E016A967CF001A992A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1C092DF16A967CF001A992A /* Default-568h@2x.png */; };
-		A1C092E316A967CF001A992A /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C092E116A967CF001A992A /* MainStoryboard_iPhone.storyboard */; };
-		A1C092E616A967CF001A992A /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C092E416A967CF001A992A /* MainStoryboard_iPad.storyboard */; };
-		A1C092E916A967CF001A992A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C092E816A967CF001A992A /* ViewController.m */; };
+		A1C092FB16A96874001A992A /* MainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C092FA16A96874001A992A /* MainMenu.m */; };
+		A1C0930016A9752D001A992A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C092FF16A9752D001A992A /* MainViewController.m */; };
+		A1C0930316A9759A001A992A /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C0930216A9759A001A992A /* MainTableViewController.m */; };
+		A1C0930916A97E67001A992A /* InsertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C0930716A97E67001A992A /* InsertViewController.m */; };
+		A1C0930A16A97E67001A992A /* InsertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1C0930816A97E67001A992A /* InsertViewController.xib */; };
+		A1C0930D16A984D7001A992A /* CostType.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C0930C16A984D7001A992A /* CostType.m */; };
+		A1E5AAC316AA345900E0071C /* InputChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E5AAC216AA345900E0071C /* InputChecker.m */; };
+		A1E5AAC716AA42ED00E0071C /* Cost.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E5AAC616AA42EC00E0071C /* Cost.m */; };
+		A1E5AACA16AA443600E0071C /* CostManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E5AAC916AA443600E0071C /* CostManager.m */; };
+		A1E5AAD716AA70E000E0071C /* CostsTodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E5AAD516AA70E000E0071C /* CostsTodayViewController.m */; };
+		A1E5AAD816AA70E000E0071C /* CostsTodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1E5AAD616AA70E000E0071C /* CostsTodayViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A137C63E16AC2D2800254043 /* main_tableview_00.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_tableview_00.png; sourceTree = "<group>"; };
+		A137C63F16AC2D2800254043 /* main_tableview_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_tableview_01.png; sourceTree = "<group>"; };
+		A137C64016AC2D2800254043 /* main_tableview_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_tableview_10.png; sourceTree = "<group>"; };
+		A137C64116AC2D2800254043 /* main_tableview_11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_tableview_11.png; sourceTree = "<group>"; };
+		A137C64216AC2D2800254043 /* main_tableview_20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_tableview_20.png; sourceTree = "<group>"; };
+		A138C2A516ABB5C4009991EF /* CostTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CostTypeViewController.h; sourceTree = "<group>"; };
+		A138C2A616ABB5C4009991EF /* CostTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CostTypeViewController.m; sourceTree = "<group>"; };
+		A138C2A716ABB5C4009991EF /* CostTypeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CostTypeViewController.xib; sourceTree = "<group>"; };
+		A1720C4016AD823600404DD8 /* cloth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloth.png; sourceTree = "<group>"; };
+		A1720C4116AD823600404DD8 /* drink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drink.png; sourceTree = "<group>"; };
+		A1720C4216AD823600404DD8 /* elec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = elec.png; sourceTree = "<group>"; };
+		A1720C4316AD823600404DD8 /* else.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = else.png; sourceTree = "<group>"; };
+		A1720C4516AD823600404DD8 /* gas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gas.png; sourceTree = "<group>"; };
+		A1720C4616AD823600404DD8 /* shoes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shoes.png; sourceTree = "<group>"; };
+		A1720C4716AD823600404DD8 /* snack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snack.png; sourceTree = "<group>"; };
+		A1720C4816AD823600404DD8 /* sweets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sweets.png; sourceTree = "<group>"; };
+		A1720C5216AD872C00404DD8 /* food.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food.png; sourceTree = "<group>"; };
 		A1C092C516A967CF001A992A /* CostReport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CostReport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C092C916A967CF001A992A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A1C092CB16A967CF001A992A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -35,10 +76,28 @@
 		A1C092DB16A967CF001A992A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		A1C092DD16A967CF001A992A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		A1C092DF16A967CF001A992A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		A1C092E216A967CF001A992A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		A1C092E516A967CF001A992A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		A1C092E716A967CF001A992A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A1C092E816A967CF001A992A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A1C092F816A96869001A992A /* CommonUtilsHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonUtilsHeader.h; sourceTree = "<group>"; };
+		A1C092F916A96874001A992A /* MainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenu.h; sourceTree = "<group>"; };
+		A1C092FA16A96874001A992A /* MainMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenu.m; sourceTree = "<group>"; };
+		A1C092FE16A9752D001A992A /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		A1C092FF16A9752D001A992A /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		A1C0930116A9759A001A992A /* MainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
+		A1C0930216A9759A001A992A /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
+		A1C0930616A97E67001A992A /* InsertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InsertViewController.h; sourceTree = "<group>"; };
+		A1C0930716A97E67001A992A /* InsertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InsertViewController.m; sourceTree = "<group>"; };
+		A1C0930816A97E67001A992A /* InsertViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InsertViewController.xib; sourceTree = "<group>"; };
+		A1C0930B16A984D7001A992A /* CostType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CostType.h; sourceTree = "<group>"; };
+		A1C0930C16A984D7001A992A /* CostType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CostType.m; sourceTree = "<group>"; };
+		A1E5AAC116AA345900E0071C /* InputChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputChecker.h; sourceTree = "<group>"; };
+		A1E5AAC216AA345900E0071C /* InputChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputChecker.m; sourceTree = "<group>"; };
+		A1E5AAC516AA42EC00E0071C /* Cost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cost.h; sourceTree = "<group>"; };
+		A1E5AAC616AA42EC00E0071C /* Cost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cost.m; sourceTree = "<group>"; };
+		A1E5AAC816AA443600E0071C /* CostManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CostManager.h; sourceTree = "<group>"; };
+		A1E5AAC916AA443600E0071C /* CostManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CostManager.m; sourceTree = "<group>"; };
+		A1E5AAD416AA70E000E0071C /* CostsTodayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CostsTodayViewController.h; sourceTree = "<group>"; };
+		A1E5AAD516AA70E000E0071C /* CostsTodayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CostsTodayViewController.m; sourceTree = "<group>"; };
+		A1E5AAD616AA70E000E0071C /* CostsTodayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CostsTodayViewController.xib; sourceTree = "<group>"; };
+		A1E5AAD916AA7E2100E0071C /* NotificationsHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationsHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +114,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A137C61A16AC1F8800254043 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				A1720C3F16AD822C00404DD8 /* CostType */,
+				A1720C3D16AD821A00404DD8 /* MainMenu */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
+		A137C64D16AD7BC300254043 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A138C2A316ABB584009991EF /* CostType */,
+				A138C2A516ABB5C4009991EF /* CostTypeViewController.h */,
+				A138C2A616ABB5C4009991EF /* CostTypeViewController.m */,
+				A1E5AACE16AA707200E0071C /* CostsToday */,
+				A1E5AAD416AA70E000E0071C /* CostsTodayViewController.h */,
+				A1E5AAD516AA70E000E0071C /* CostsTodayViewController.m */,
+				A1C0930516A97E36001A992A /* Insert */,
+				A1C0930416A97E10001A992A /* MainMenu */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A138C2A316ABB584009991EF /* CostType */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CostType;
+			sourceTree = "<group>";
+		};
+		A1720C3D16AD821A00404DD8 /* MainMenu */ = {
+			isa = PBXGroup;
+			children = (
+				A137C63E16AC2D2800254043 /* main_tableview_00.png */,
+				A137C63F16AC2D2800254043 /* main_tableview_01.png */,
+				A137C64016AC2D2800254043 /* main_tableview_10.png */,
+				A137C64116AC2D2800254043 /* main_tableview_11.png */,
+				A137C64216AC2D2800254043 /* main_tableview_20.png */,
+			);
+			name = MainMenu;
+			sourceTree = "<group>";
+		};
+		A1720C3F16AD822C00404DD8 /* CostType */ = {
+			isa = PBXGroup;
+			children = (
+				A1720C5216AD872C00404DD8 /* food.png */,
+				A1720C4016AD823600404DD8 /* cloth.png */,
+				A1720C4116AD823600404DD8 /* drink.png */,
+				A1720C4216AD823600404DD8 /* elec.png */,
+				A1720C4316AD823600404DD8 /* else.png */,
+				A1720C4516AD823600404DD8 /* gas.png */,
+				A1720C4616AD823600404DD8 /* shoes.png */,
+				A1720C4716AD823600404DD8 /* snack.png */,
+				A1720C4816AD823600404DD8 /* sweets.png */,
+			);
+			name = CostType;
+			sourceTree = "<group>";
+		};
 		A1C092BA16A967CF001A992A = {
 			isa = PBXGroup;
 			children = (
@@ -85,12 +203,13 @@
 		A1C092CF16A967CF001A992A /* CostReport */ = {
 			isa = PBXGroup;
 			children = (
+				A1C092F716A96853001A992A /* Utils */,
+				A1C092F516A96841001A992A /* Models */,
+				A137C64D16AD7BC300254043 /* Controllers */,
+				A137C61A16AC1F8800254043 /* Icons */,
+				A1C092F316A9680A001A992A /* Views */,
 				A1C092D816A967CF001A992A /* AppDelegate.h */,
 				A1C092D916A967CF001A992A /* AppDelegate.m */,
-				A1C092E116A967CF001A992A /* MainStoryboard_iPhone.storyboard */,
-				A1C092E416A967CF001A992A /* MainStoryboard_iPad.storyboard */,
-				A1C092E716A967CF001A992A /* ViewController.h */,
-				A1C092E816A967CF001A992A /* ViewController.m */,
 				A1C092D016A967CF001A992A /* Supporting Files */,
 			);
 			path = CostReport;
@@ -108,6 +227,69 @@
 				A1C092DF16A967CF001A992A /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A1C092F316A9680A001A992A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A138C2A716ABB5C4009991EF /* CostTypeViewController.xib */,
+				A1E5AAD616AA70E000E0071C /* CostsTodayViewController.xib */,
+				A1C0930816A97E67001A992A /* InsertViewController.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		A1C092F516A96841001A992A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A1C092F916A96874001A992A /* MainMenu.h */,
+				A1C092FA16A96874001A992A /* MainMenu.m */,
+				A1C0930B16A984D7001A992A /* CostType.h */,
+				A1C0930C16A984D7001A992A /* CostType.m */,
+				A1E5AAC516AA42EC00E0071C /* Cost.h */,
+				A1E5AAC616AA42EC00E0071C /* Cost.m */,
+				A1E5AAC816AA443600E0071C /* CostManager.h */,
+				A1E5AAC916AA443600E0071C /* CostManager.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		A1C092F716A96853001A992A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A1C092F816A96869001A992A /* CommonUtilsHeader.h */,
+				A1E5AAC116AA345900E0071C /* InputChecker.h */,
+				A1E5AAC216AA345900E0071C /* InputChecker.m */,
+				A1E5AAD916AA7E2100E0071C /* NotificationsHeader.h */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		A1C0930416A97E10001A992A /* MainMenu */ = {
+			isa = PBXGroup;
+			children = (
+				A1C092FE16A9752D001A992A /* MainViewController.h */,
+				A1C092FF16A9752D001A992A /* MainViewController.m */,
+				A1C0930116A9759A001A992A /* MainTableViewController.h */,
+				A1C0930216A9759A001A992A /* MainTableViewController.m */,
+			);
+			name = MainMenu;
+			sourceTree = "<group>";
+		};
+		A1C0930516A97E36001A992A /* Insert */ = {
+			isa = PBXGroup;
+			children = (
+				A1C0930616A97E67001A992A /* InsertViewController.h */,
+				A1C0930716A97E67001A992A /* InsertViewController.m */,
+			);
+			name = Insert;
+			sourceTree = "<group>";
+		};
+		A1E5AACE16AA707200E0071C /* CostsToday */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CostsToday;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,8 +347,23 @@
 				A1C092DC16A967CF001A992A /* Default.png in Resources */,
 				A1C092DE16A967CF001A992A /* Default@2x.png in Resources */,
 				A1C092E016A967CF001A992A /* Default-568h@2x.png in Resources */,
-				A1C092E316A967CF001A992A /* MainStoryboard_iPhone.storyboard in Resources */,
-				A1C092E616A967CF001A992A /* MainStoryboard_iPad.storyboard in Resources */,
+				A1C0930A16A97E67001A992A /* InsertViewController.xib in Resources */,
+				A1E5AAD816AA70E000E0071C /* CostsTodayViewController.xib in Resources */,
+				A138C2A916ABB5C4009991EF /* CostTypeViewController.xib in Resources */,
+				A137C64316AC2D2800254043 /* main_tableview_00.png in Resources */,
+				A137C64416AC2D2800254043 /* main_tableview_01.png in Resources */,
+				A137C64516AC2D2800254043 /* main_tableview_10.png in Resources */,
+				A137C64616AC2D2800254043 /* main_tableview_11.png in Resources */,
+				A137C64716AC2D2800254043 /* main_tableview_20.png in Resources */,
+				A1720C4916AD823600404DD8 /* cloth.png in Resources */,
+				A1720C4A16AD823600404DD8 /* drink.png in Resources */,
+				A1720C4B16AD823600404DD8 /* elec.png in Resources */,
+				A1720C4C16AD823600404DD8 /* else.png in Resources */,
+				A1720C4E16AD823600404DD8 /* gas.png in Resources */,
+				A1720C4F16AD823600404DD8 /* shoes.png in Resources */,
+				A1720C5016AD823600404DD8 /* snack.png in Resources */,
+				A1720C5116AD823600404DD8 /* sweets.png in Resources */,
+				A1720C5316AD872C00404DD8 /* food.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,7 +376,16 @@
 			files = (
 				A1C092D616A967CF001A992A /* main.m in Sources */,
 				A1C092DA16A967CF001A992A /* AppDelegate.m in Sources */,
-				A1C092E916A967CF001A992A /* ViewController.m in Sources */,
+				A1C092FB16A96874001A992A /* MainMenu.m in Sources */,
+				A1C0930016A9752D001A992A /* MainViewController.m in Sources */,
+				A1C0930316A9759A001A992A /* MainTableViewController.m in Sources */,
+				A1C0930916A97E67001A992A /* InsertViewController.m in Sources */,
+				A1C0930D16A984D7001A992A /* CostType.m in Sources */,
+				A1E5AAC316AA345900E0071C /* InputChecker.m in Sources */,
+				A1E5AAC716AA42ED00E0071C /* Cost.m in Sources */,
+				A1E5AACA16AA443600E0071C /* CostManager.m in Sources */,
+				A1E5AAD716AA70E000E0071C /* CostsTodayViewController.m in Sources */,
+				A138C2A816ABB5C4009991EF /* CostTypeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,22 +398,6 @@
 				A1C092D316A967CF001A992A /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		A1C092E116A967CF001A992A /* MainStoryboard_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A1C092E216A967CF001A992A /* en */,
-			);
-			name = MainStoryboard_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		A1C092E416A967CF001A992A /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A1C092E516A967CF001A992A /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -306,6 +496,7 @@
 				A1C092EE16A967CF001A992A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
