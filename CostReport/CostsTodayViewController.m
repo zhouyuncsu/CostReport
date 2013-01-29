@@ -71,27 +71,65 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 1;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [[manager getCosts] count];
+    if (section == 0) {
+        //今日の合計
+        return 1;
+    } else if (section == 1) {
+        //今日の記録一覧
+        return [[manager getCosts] count];
+    } else {
+        return 0;
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CostsTodayTableViewCellIdentifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CostsTodayTableViewCellIdentifier];
+    
+    if (indexPath.section == 0) {
+        //今日の合計
+        if (cell == nil) {
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CostsTodayTableViewCellIdentifier];
+        }
+        
+        __block long sum = 0;
+        cell.textLabel.text = [NSString stringWithFormat:@"合計：%ld円", sum];
+        
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^ {
+            Cost *cost;
+            int costIng;
+            
+            for (int i = 0; i < [[manager getCosts] count]; i ++) {
+                cost = (Cost *)[[manager getCosts] objectAtIndex:i];
+                costIng = [[cost getCost] intValue];
+                sum += costIng;
+            }
+            
+            dispatch_async(dispatch_get_main_queue(), ^ {
+                cell.textLabel.text = [NSString stringWithFormat:@"合計：%ld円", sum];
+            });
+        });
+        
+    } else if (indexPath.section == 1) {
+        //今日の記録一覧
+        if (cell == nil) {
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CostsTodayTableViewCellIdentifier];
+        }
+        
+        Cost *cost = (Cost *)[[manager getCosts] objectAtIndex:indexPath.row];
+        NSString * costType = [cost getCostType];
+        
+        cell.imageView.image = [[CostType sharedManager] getImageByType:costType];
+        cell.textLabel.text = [NSString stringWithFormat:@"%@円", [cost getCost]];
+        cell.detailTextLabel.text = [NSString stringWithFormat:@"%@:%@  %@", [cost getHourOfCost], [cost getMinuteOfCost], costType];
+    } else {
+        cell = nil;
     }
-    
-    Cost *cost = (Cost *)[[manager getCosts] objectAtIndex:indexPath.row];
-    NSString * costType = [cost getCostType];
-    
-    cell.imageView.image = [[CostType sharedManager] getImageByType:costType];
-    cell.textLabel.text = [NSString stringWithFormat:@"%@円", [cost getCost]];
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@:%@  %@", [cost getHourOfCost], [cost getMinuteOfCost], costType];
     
     return cell;
 }

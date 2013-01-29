@@ -13,6 +13,7 @@
 #import "InsertViewController.h"
 #import "CostsTodayViewController.h"
 #import "CostTypeViewController.h"
+#import "CostsThisWeekViewController.h"
 
 @interface MainTableViewController ()
 
@@ -44,12 +45,11 @@
     
     DebugLogFunc();
     
-    [self setTitle:MainTableViewTitle];
-    
     if (!manager) {
         manager = [MainMenu sharedManager];
     }
     
+    [self setTitle:MainTableViewTitle];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -145,7 +145,13 @@
     UIViewController *viewController;
     Class class;
     
-    if (indexPath.section == 1) {
+    if (indexPath.section == 0) {
+        if (indexPath.row == 0) {
+            class = [InsertViewController class];
+        } else if (indexPath.row == 1) {
+            class = [CostsThisWeekViewController class];
+        }
+    } else if (indexPath.section == 1) {
         if (indexPath.row == 0) {
             class = [InsertViewController class];
         } else if (indexPath.row == 1) {

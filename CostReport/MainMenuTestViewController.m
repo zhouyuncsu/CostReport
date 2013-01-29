@@ -1,25 +1,21 @@
 //
-//  MainViewController.m
+//  MainMenuTestViewController.m
 //  CostReport
 //
-//  Created by 周 贇 on 13/01/18.
+//  Created by 周 贇 on 13/01/22.
 //  Copyright (c) 2013年 周 贇. All rights reserved.
 //
 
-#import "MainViewController.h"
+#import "MainMenuTestViewController.h"
 
-#import "CommonUtilsHeader.h"
-
-@interface MainViewController ()
+@interface MainMenuTestViewController ()
 
 @end
 
-@implementation MainViewController
+@implementation MainMenuTestViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    DebugLogFunc();
-    
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
@@ -30,17 +26,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    DebugLogFunc();
-    
-    [self.navigationBar setTintColor:[UIColor orangeColor]];
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-    DebugLogFunc();
 }
 
 @end

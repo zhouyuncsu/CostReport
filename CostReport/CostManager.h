@@ -23,4 +23,7 @@
 - (void)modifyCostType:(NSString *)costType atIndex:(NSInteger)index;
 - (void)modifyCost:(NSString *)cost costType:(NSString *)costType atIndex:(NSInteger)index;
 
+//for test
+- (NSArray *)getDatesThisWeek;
+
 @end

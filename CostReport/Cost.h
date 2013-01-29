@@ -30,6 +30,8 @@
 + (NSString *)getYear:(NSDate *)date;
 + (NSString *)getMonth:(NSDate *)date;
 + (NSString *)getDay:(NSDate *)date;
++ (NSString *)getWeekDay:(NSDate *)date;
++ (NSArray *)getWeekDayStrings;
 
 - (NSString *)forSave;
 + (Cost *)getCostFromSaveString:(NSString *)saveString;

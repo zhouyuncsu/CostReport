@@ -32,7 +32,7 @@ static CostManager *sharedManager = nil;
     if (!sharedManager) {
         sharedManager = [[CostManager alloc] init];
         
-        sharedManager.costsArray = [sharedManager loadCostsTodayFromFile];
+        sharedManager.costsArray = [sharedManager loadCostsToday];
         if (!sharedManager.costsArray) {
             sharedManager.costsArray = [NSMutableArray array];
         }
@@ -166,11 +166,51 @@ static CostManager *sharedManager = nil;
     return costArray;
 }
 
-- (NSMutableArray *)loadCostsTodayFromFile
+//- (NSArray *)loadCostsThisWeek
+//{
+//    
+//    
+//    
+//}
+
+- (NSArray *)getDatesThisWeek
+{
+    NSDate *today = [NSDate date];
+    
+    NSString *weekDay = [Cost getWeekDay:today];
+    
+    NSInteger weekDayIndex = [[Cost getWeekDayStrings] indexOfObject:weekDay];
+    
+    NSUInteger dayNumsBeforeToday = weekDayIndex;
+    NSUInteger dayNumsAfterToday = 7 - (weekDayIndex + 1);
+    
+    NSTimeInterval aDay = 24 * 60 * 60;
+    
+    NSMutableArray *dates = [NSMutableArray array];
+    
+    for (int i = 0; i < dayNumsBeforeToday; i ++) {
+        [dates addObject:[today dateByAddingTimeInterval:(-(aDay * (dayNumsBeforeToday - i)))]];
+    }
+    
+    [dates addObject:today];
+    
+    for (int i = 0; i < dayNumsAfterToday; i ++) {
+        [dates addObject:[today dateByAddingTimeInterval:(aDay * (i + 1))]];
+    }
+    
+    return dates;
+}
+
+- (NSMutableArray *)loadCostsToday
 {
     DebugLogFunc();
     
-    NSDate *date = [NSDate date];
+    return [self loadCostsByDate:[NSDate date]];
+}
+
+- (NSMutableArray *)loadCostsByDate:(NSDate *)date
+{
+    DebugLogFunc();
     
     NSString *filePathYear = [Cost getYear:date];
     NSString *filePathMonth = [Cost getMonth:date];

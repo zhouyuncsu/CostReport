@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A133DF9E16B0276000598446 /* CostsThisWeekViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A133DF9C16B0276000598446 /* CostsThisWeekViewController.m */; };
+		A133DF9F16B0276000598446 /* CostsThisWeekViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A133DF9D16B0276000598446 /* CostsThisWeekViewController.xib */; };
 		A137C64316AC2D2800254043 /* main_tableview_00.png in Resources */ = {isa = PBXBuildFile; fileRef = A137C63E16AC2D2800254043 /* main_tableview_00.png */; };
 		A137C64416AC2D2800254043 /* main_tableview_01.png in Resources */ = {isa = PBXBuildFile; fileRef = A137C63F16AC2D2800254043 /* main_tableview_01.png */; };
 		A137C64516AC2D2800254043 /* main_tableview_10.png in Resources */ = {isa = PBXBuildFile; fileRef = A137C64016AC2D2800254043 /* main_tableview_10.png */; };
@@ -46,6 +48,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A133DF9B16B0276000598446 /* CostsThisWeekViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CostsThisWeekViewController.h; sourceTree = "<group>"; };
+		A133DF9C16B0276000598446 /* CostsThisWeekViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CostsThisWeekViewController.m; sourceTree = "<group>"; };
+		A133DF9D16B0276000598446 /* CostsThisWeekViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CostsThisWeekViewController.xib; sourceTree = "<group>"; };
 		A137C63E16AC2D2800254043 /* main_tableview_00.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_tableview_00.png; sourceTree = "<group>"; };
 		A137C63F16AC2D2800254043 /* main_tableview_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_tableview_01.png; sourceTree = "<group>"; };
 		A137C64016AC2D2800254043 /* main_tableview_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_tableview_10.png; sourceTree = "<group>"; };
@@ -114,6 +119,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A133DF9A16B026F900598446 /* CostsThisWeek */ = {
+			isa = PBXGroup;
+			children = (
+				A133DF9B16B0276000598446 /* CostsThisWeekViewController.h */,
+				A133DF9C16B0276000598446 /* CostsThisWeekViewController.m */,
+				A133DF9D16B0276000598446 /* CostsThisWeekViewController.xib */,
+			);
+			name = CostsThisWeek;
+			sourceTree = "<group>";
+		};
 		A137C61A16AC1F8800254043 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +141,7 @@
 		A137C64D16AD7BC300254043 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A133DF9A16B026F900598446 /* CostsThisWeek */,
 				A138C2A316ABB584009991EF /* CostType */,
 				A138C2A516ABB5C4009991EF /* CostTypeViewController.h */,
 				A138C2A616ABB5C4009991EF /* CostTypeViewController.m */,
@@ -364,6 +380,7 @@
 				A1720C5016AD823600404DD8 /* snack.png in Resources */,
 				A1720C5116AD823600404DD8 /* sweets.png in Resources */,
 				A1720C5316AD872C00404DD8 /* food.png in Resources */,
+				A133DF9F16B0276000598446 /* CostsThisWeekViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +403,7 @@
 				A1E5AACA16AA443600E0071C /* CostManager.m in Sources */,
 				A1E5AAD716AA70E000E0071C /* CostsTodayViewController.m in Sources */,
 				A138C2A816ABB5C4009991EF /* CostTypeViewController.m in Sources */,
+				A133DF9E16B0276000598446 /* CostsThisWeekViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -151,13 +151,32 @@
     }
 }
 
-- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+//- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+//{
+//    if (component == 0) {
+//        return [[manager getCostTypes] objectAtIndex:row];
+//    } else {
+//        return nil;
+//    }
+//}
+
+- (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view
 {
-    if (component == 0) {
-        return [[manager getCostTypes] objectAtIndex:row];
-    } else {
-        return nil;
-    }
+    UIView *customView = [[UIImageView alloc] init];
+        
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
+    imageView.contentMode = UIViewContentModeScaleAspectFit;
+    imageView.image = [[manager getCostTypeImages] objectAtIndex:row];
+    [customView addSubview:imageView];
+    
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(64, 10, 100, 24)];
+    label.text = [[manager getCostTypes] objectAtIndex:row];
+    label.backgroundColor = [UIColor clearColor];
+    [customView addSubview:label];
+    
+    [customView sizeToFit];
+    
+    return customView;
 }
 
 @end

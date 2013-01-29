@@ -19,13 +19,22 @@
 
 @implementation Cost
 
-#define CostDateFormat      @"yyyy年MM月dd日HH時mm分ss秒"
-#define CostDateYearRange   NSMakeRange(0, 4)
-#define CostDateMonthRange  NSMakeRange(5, 2)
-#define CostDateDayRange    NSMakeRange(8, 2)
-#define CostDateHourRange   NSMakeRange(11, 2)
-#define CostDateMinuteRange NSMakeRange(14, 2)
-#define CostDateSecondRange NSMakeRange(17, 2)
+#define CostDateFormat          @"yyyy年MM月dd日HH時mm分ss秒EEEE"
+#define CostDateYearRange       NSMakeRange(0, 4)
+#define CostDateMonthRange      NSMakeRange(5, 2)
+#define CostDateDayRange        NSMakeRange(8, 2)
+#define CostDateHourRange       NSMakeRange(11, 2)
+#define CostDateMinuteRange     NSMakeRange(14, 2)
+#define CostDateSecondRange     NSMakeRange(17, 2)
+#define CostDateWeekDayRange    NSMakeRange(20, 4)
+
+#define Monday                  @"Mond"
+#define Tuesday                 @"Tues"
+#define Wednesday               @"Wedn"
+#define Thursday                @"Thur"
+#define Friday                  @"Frid"
+#define Saturday                @"Satu"
+#define Sunday                  @"Sund"
 
 typedef enum {
     CostArrayIndexCost,
@@ -140,6 +149,22 @@ typedef enum {
     NSString *dateString = [Cost getStringFromDate:date];
     
     return [dateString substringWithRange:CostDateDayRange];
+}
+
++ (NSString *)getWeekDay:(NSDate *)date
+{
+    if (!date) {
+        return nil;
+    }
+    
+    NSString *dateString = [Cost getStringFromDate:date];
+    
+    return [dateString substringWithRange:CostDateWeekDayRange];
+}
+
++ (NSArray *)getWeekDayStrings
+{
+    return @[Sunday, Thursday, Wednesday, Thursday, Friday, Saturday, Sunday];
 }
 
 - (NSString *)forSave
